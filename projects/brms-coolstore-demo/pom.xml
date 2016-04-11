@@ -137,6 +137,11 @@
 					<groupId>org.kie</groupId>
 					<artifactId>kie-ci</artifactId>
 				</dependency>
+				<dependency>
+                                        <groupId>commons-collections</groupId>
+                                        <artifactId>commons-collections</artifactId>
+                                	<version>3.2.2</version>
+				</dependency>
 				<!-- shrinkwrap dependencies -->
 				<dependency>
 					<groupId>org.jboss.shrinkwrap.resolver</groupId>
