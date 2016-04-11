@@ -167,7 +167,7 @@
         <dependency>
         	<groupId>commons-collections</groupId>
         	<artifactId>commons-collections</artifactId>
-        	<version>3.2.11111111111</version>
+        	<version>3.2.1</version>
         </dependency>
     </dependencies>
 
