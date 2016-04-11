@@ -47,11 +47,10 @@ RUN mvn install:install-file -Dfile=/opt/jboss/brms-projects/libs/coolstore-2.0.
   && mvn clean install -f /opt/jboss/brms-projects/brms-coolstore-demo/pom.xml \
   && cp /opt/jboss/brms-projects/brms-coolstore-demo/target/brms-coolstore-demo.war $BRMS_HOME/standalone/deployments/ \
   && chown -R jboss:jboss $BRMS_HOME/bin/.niogit $BRMS_HOME/standalone/configuration/application-roles.properties $BRMS_HOME/standalone/configuration/standalone.xml $BRMS_HOME/standalone/deployments/brms-coolstore-demo.war $BRMS_HOME/standalone/deployments/business-central.war/WEB-INF/classes/userinfo.properties \
-  && rm -rf ~/.m2/repository /opt/jboss/brms-projects  
 
 RUN mvn clean install -f /opt/jboss/brms-projects/helloworld-rs/pom.xml \
-  && cp /opt/jboss/brms-projects/helloworld-rs/target/jboss-helloworld-rs.war $BRMS_HOME/standalone/deployments/
-
+  && cp /opt/jboss/brms-projects/helloworld-rs/target/jboss-helloworld-rs.war $BRMS_HOME/standalone/deployments/ \
+  && rm -rf ~/.m2/repository /opt/jboss/brms-projects
 # Run as JBoss 
 USER 1000
 
